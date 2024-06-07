@@ -74,6 +74,5 @@ export default function withAuth(
       if (role === 'user') return NextResponse.redirect(new URL('/presensi', req.url));
       if (role === 'admin') return NextResponse.redirect(new URL('/admin', req.url));
     }
-
   }
 }
